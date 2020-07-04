@@ -36,12 +36,11 @@ def turn(board)
 end
 
 def play(board = "X")
-    board[index] = board
-  count = 0
-  board.each do |index|
-   if index != " "
-     count += 1
-   end
+  counter = 0
+   board.each {|space|
+     if space == "X" || space == "O"
+       counter += 1
+     end
+   }
+   counter
  end
-   count
-end
