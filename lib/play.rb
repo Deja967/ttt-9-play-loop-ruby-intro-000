@@ -37,10 +37,7 @@ end
 
 def play(board)
   counter = 0
-  loop.do
+  until counter > 1 || counter < 9
     puts "turn"
-    if counter >= 9
-      break
   end
-end
 end
