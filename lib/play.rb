@@ -37,7 +37,10 @@ end
 
 def play(board)
   counter = 0
-  if counter > 1 || counter < 9
-    puts "turn"
+  board.each do |index|
+     if index != " "
+       count += 1
+     end
+   end
+     count
   end
-end
