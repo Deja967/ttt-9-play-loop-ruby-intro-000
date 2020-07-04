@@ -39,8 +39,8 @@ def play(board)
   counter = 0
   board.each do |index|
      if index != " "
-       count += 1
+       counter += 1
      end
    end
-     count
+     counter
   end
