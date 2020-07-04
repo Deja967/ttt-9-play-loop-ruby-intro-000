@@ -36,21 +36,14 @@ def turn(board)
 end
 
 def play(board)
-  puts "Please enter 1-9:"
-  input = gets.strip
-  index = input_to_index(input)
-  if valid_move?(board, index)
-    move(board, index)
-    display_board(board)
-  else
-    turn(board)
+turns = 9 
+counter = 0
+loop do
+  counter += 1
+  turn(board)
+  if counter >= turns
+    puts "You only get #{turns} turns"
   end
-  count = 0
- board.each do |index|
-   if index != " "
-     count += 1
-   end
- end
-   count
+
 end
 end
