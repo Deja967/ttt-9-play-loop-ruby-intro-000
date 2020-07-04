@@ -35,7 +35,7 @@ def turn(board)
   end
 end
 
-def play(board = "X")
+def play(board)
   counter = 0
    board.each {|space|
      if space = "X" || space = "O"
