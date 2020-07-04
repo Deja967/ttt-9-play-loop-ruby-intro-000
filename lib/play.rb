@@ -37,10 +37,8 @@ end
 
 def play(board)
   counter = 0
-  board.each do |index|
-     if index != "X"
-       counter += 1
-     end
+until counter >= 1 || until counter <= 9
+  counter += 1
    end
-     counter
-  end
+   counter
+ end
