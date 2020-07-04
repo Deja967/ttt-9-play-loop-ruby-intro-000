@@ -36,6 +36,7 @@ def turn(board)
 end
 
 def play(board)
+  count = 0
   board.each do |index|
    if index != " "
      count += 1
