@@ -36,8 +36,10 @@ def turn(board)
 end
 
 def play(board)
-  counter = 0
-  until turn(board) == 1 || until turn(board) == 9
-    turn(board)
-  end
+  board.each do |index|
+   if index != " "
+     count += 1
+   end
+ end
+   count
 end
