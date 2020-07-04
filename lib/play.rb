@@ -43,6 +43,7 @@ loop do
   turn(board)
   if counter >= turns
     puts "You only get #{turns} turns"
+    break
   end
 
 end
